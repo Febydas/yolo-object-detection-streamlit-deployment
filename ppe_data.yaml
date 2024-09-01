@@ -1,0 +1,3 @@
+{names: [Hardhat, Mask, NO-Hardhat, NO-Mask, NO-Safety Vest, Person, Safety Cone,
+    Safety Vest, machinery, vehicle,fire], nc: 11, test: C:/WORLD/yolo-env/prj1/dataset/test,
+  train: C:/WORLD/yolo-env/prj1/dataset/train, val: C:/WORLD/yolo-env/prj1/dataset/valid}

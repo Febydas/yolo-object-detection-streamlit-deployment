@@ -6,7 +6,7 @@ from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, WebRtcMode
 import av
 
 # Load the YOLOv8 model
-model = YOLO('C:\\WORLD\\yolo-env\\webapp\\models\\yolov8m.onnx', task='detect')
+model = YOLO('C:\WORLD\yolo-env\webapp\models\yolo-object-detection\yolov8m.onnx', task='detect')
 
 # Function to perform object detection on an image
 def detect_objects(image):
@@ -17,7 +17,7 @@ def detect_objects(image):
 # Class for WebRTC video processing
 class YOLOVideoProcessor(VideoProcessorBase):
     def __init__(self):
-        self.yolo = YOLO('C:\\WORLD\\yolo-env\\webapp\\models\\yolov8m.onnx', task='detect')
+        self.yolo = YOLO('C:\WORLD\yolo-env\webapp\models\yolo-object-detection\yolov8m.onnx', task='detect')
 
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
